@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veldora Framework</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-gray-800 shadow-lg">
+    <h1 class="text-2xl font-bold text-indigo-400">Veldora</h1>
+    <ul class="flex gap-6 text-gray-300">
+      <li><a href="#" class="hover:text-white">Home</a></li>
+      <li><a href="#" class="hover:text-white">Docs</a></li>
+      <li><a href="#" class="hover:text-white">Features</a></li>
+      <li><a href="#" class="hover:text-white">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6">
+    <h2 class="text-5xl font-extrabold mb-6">Build Faster with Veldora</h2>
+    <p class="text-gray-400 text-lg mb-8">A modern MVC framework built on Flask for scalable and clean web development.</p>
+    <div class="flex justify-center gap-4">
+      <button class="bg-indigo-500 hover:bg-indigo-600 px-6 py-3 rounded-xl">Get Started</button>
+      <button class="border border-gray-600 px-6 py-3 rounded-xl hover:bg-gray-800">Documentation</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="grid md:grid-cols-3 gap-8 px-10 py-16">
+    <div class="bg-gray-800 p-6 rounded-2xl shadow">
+      <h3 class="text-xl font-semibold mb-2">MVC Architecture</h3>
+      <p class="text-gray-400">Organized structure with Models, Views, and Controllers.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-2xl shadow">
+      <h3 class="text-xl font-semibold mb-2">Lightweight</h3>
+      <p class="text-gray-400">Built on top of Flask, keeping things simple and fast.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-2xl shadow">
+      <h3 class="text-xl font-semibold mb-2">Scalable</h3>
+      <p class="text-gray-400">Designed for small to large applications.</p>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section class="px-10 py-16">
+    <h3 class="text-2xl font-bold mb-6 text-center">Quick Example</h3>
+    <pre class="bg-black p-6 rounded-xl overflow-x-auto text-sm">
+<code>
+from veldora import App
+
+app = App()
+
+@app.route('/')
+def home():
+    return "Hello from Veldora 🚀"
+
+app.run()
+</code>
+    </pre>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500">
+    © 2026 Veldora Framework. Built with ❤️ by agimdudu using Flask.
+  </footer>
+
+</body>
+</html>
