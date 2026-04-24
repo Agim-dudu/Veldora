@@ -72,7 +72,8 @@ flask run
 flask db migrate -m "Initial migration"
 flask db upgrade
 
-python -m seeders.user_seed```
+python -m seeders.user_seed
+```
 
 ------------------------------------------------------------------------
 
